@@ -73,15 +73,14 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-
 }
 .container-dias{
     text-align: center;
     position: relative;
-    color: #FFFFFF;
+    color: $dark-color;
     font-size: 40px;
 }
-.container-cuotas{
+.container-cuotas {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -90,13 +89,37 @@ header{
     color: #FFFFFF;
     gap: 40px;
 }
-.cuotas-12{
-    color: $background-color;
+.cuotas-12 {
+    color: #0940db;
     font-size: 100px;
 }
-.container-12{
+.container-12 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 30px;
+}
+.container-promo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #000;
+color: #fff;
+padding: 1rem;
+}
+.promo, .promos, .contact {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.promo h1, .promos h2 {
+margin: 0;
+font-size: 1.5rem;
+}
+.promo p, .promos p, .contact p {
+margin: 0.5rem 0 0;
+font-size: 1rem;
+}
+.contact {
+text-align: right;
 }

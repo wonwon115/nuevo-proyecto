@@ -111,4 +111,33 @@ header {
   flex-direction: column;
   align-items: flex-start;
   font-size: 30px;
+}
+
+.container-promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.promo, .promos, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo h1, .promos h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.promo p, .promos p, .contact p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.contact {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
