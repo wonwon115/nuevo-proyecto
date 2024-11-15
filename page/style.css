@@ -1,13 +1,21 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-html {
+body {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  background-color: #000000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #0940db;
+  padding: 10px;
 }
 
 .container {
@@ -15,19 +23,92 @@ html {
   margin: 0 auto;
 }
 
-.container-logo {
+.container-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 30px;
-  gap: 10px;
+}
+
+.container-header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.container-logo {
+  display: flex;
+  align-items: end;
+  gap: 5px;
 }
 
 .container-logo i {
-  font-size: 30px;
+  font-size: 31px;
+  color: #FFFFFF;
 }
 
-.container-logo h1 a {
-  text-decoration: none;
-  color: #151515;
+.container-nav a {
+  font-size: 17px;
+  padding: 12px;
+}
+
+.container-envios {
+  padding: 13px;
+  text-align: center;
+  font-size: 9px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.container-portada {
+  position: relative;
+  height: calc(80vh - 60px); /* reducimos la altura total según lo recortado */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-portada img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-sup-portada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container-dias {
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.container-cuotas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+  gap: 40px;
+}
+
+.cuotas-12 {
+  color: #0940db;
+  font-size: 100px;
+}
+
+.container-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
