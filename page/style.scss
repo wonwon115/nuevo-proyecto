@@ -78,7 +78,7 @@ header{
     text-align: center;
     position: relative;
     color: $dark-color;
-    font-size: 40px;
+    font-size: 30px;
 }
 .container-cuotas {
     display: flex;
@@ -91,13 +91,13 @@ header{
 }
 .cuotas-12 {
     color: #0940db;
-    font-size: 100px;
+    font-size: 80px;
 }
 .container-12 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 30px;
+    font-size: 25px;
 }
 .container-promo{
 display: flex;
@@ -114,12 +114,30 @@ align-items: center;
 }
 .promo h1, .promos h2 {
 margin: 0;
-font-size: 1.5rem;
+font-size: 12px;
 }
 .promo p, .promos p, .contact p {
 margin: 0.5rem 0 0;
-font-size: 1rem;
+font-size: 10px;
 }
 .contact {
 text-align: right;
 }
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Ajusta el espacio entre las imágenes */
+    width: 100%;
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.galeria img:hover{
+    filter: brightness(1.2); /* Aumenta el brillo */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6); /* Añade un efecto de luz */
+}
+
+
+
